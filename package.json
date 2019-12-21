@@ -4,7 +4,9 @@
   "bugs": {
     "url": "https://github.com/sanemat/web-windmill/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bulma": "^0.8.0"
+  },
   "devDependencies": {
     "http-server": "^0.12.0",
     "prettier": "^1.19.1"
