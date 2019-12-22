@@ -1,8 +1,23 @@
 const constraints = { audio: true };
+let stream = null;
+
+// stop-media-stream
+function stopAndRemoveTrack(mediaStream) {
+  return function(track) {
+    track.stop();
+    mediaStream.removeTrack(track);
+  };
+}
+
+// stop-media-stream
+function stopMediaStream(mediaStream) {
+  if (!mediaStream) {
+    return;
+  }
+  mediaStream.getTracks().forEach(stopAndRemoveTrack(mediaStream));
+}
 
 async function getMedia(constraints) {
-  let stream = null;
-
   try {
     stream = await navigator.mediaDevices.getUserMedia(constraints);
     /* use the stream */
@@ -17,6 +32,6 @@ document
     if (event.target.checked) {
       getMedia(constraints);
     } else {
-      alert("uncheched");
+      stopMediaStream(stream);
     }
   });

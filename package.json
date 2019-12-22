@@ -5,7 +5,8 @@
     "url": "https://github.com/sanemat/web-windmill/issues"
   },
   "dependencies": {
-    "bulma": "^0.8.0"
+    "bulma": "^0.8.0",
+    "stop-media-stream": "^1.0.0"
   },
   "devDependencies": {
     "http-server": "^0.12.0",
