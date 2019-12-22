@@ -2,6 +2,8 @@ const constraints = { audio: true };
 let stream = null;
 const canvas = document.querySelector("#waveform");
 const drawContext = canvas.getContext("2d");
+drawContext.fillStyle = "rgba(0, 0, 0, 1)";
+drawContext.fillRect(0, 0, canvas.width, canvas.height);
 
 // stop-media-stream
 function stopAndRemoveTrack(mediaStream) {
