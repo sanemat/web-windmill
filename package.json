@@ -21,7 +21,8 @@
     "url": "git+https://github.com/sanemat/web-windmill.git"
   },
   "scripts": {
-    "prettier": "prettier --check **/*.js",
+    "fix": "prettier --write **/*.{js,html}",
+    "prettier": "prettier --check **/*.{js,html}",
     "start": "http-server",
     "test": "npm run prettier"
   }
