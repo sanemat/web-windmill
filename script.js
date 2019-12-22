@@ -27,7 +27,7 @@ async function getMedia(constraints) {
 }
 
 document
-  .getElementById("menu__setting_mic")
+  .querySelector("#menu__setting_mic")
   .addEventListener("change", event => {
     if (event.target.checked) {
       getMedia(constraints);
