@@ -9,7 +9,7 @@
     "stop-media-stream": "^1.0.0"
   },
   "devDependencies": {
-    "http-server": "^0.12.0",
+    "http-server": "^0.12.3",
     "prettier": "^1.19.1"
   },
   "homepage": "https://github.com/sanemat/web-windmill#readme",
